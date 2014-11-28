@@ -1,0 +1,24 @@
+body{color:#444444;font-family: 'Vollkorn', serif;font-size:16px;margin:0;}
+.float-right{float:right!important}.float-left{float:left!important}
+.atas nav { background:#fff; color:#000; width:100%; height:54px; position:relative;z-index:25;top:-20px;border-bottom:4px solid #000000;}
+.atas nav a,.atas nav a:visited{color:#000;text-decoration:none;border:0;font:0/0 a;text-shadow:none;color:transparent}
+.atas nav li{float:left;height:50px;}
+.atas nav li:first-child{border:0}
+.atas nav h3{font-family: 'Oswald', sans-serif;font-size:13px;font-size:1.4rem;line-height:50px;font-weight:300;margin:0 20px}
+.atas nav a{background:url('http://2.bp.blogspot.com/-GVAtnjng1mE/UIHSJqHkkQI/AAAAAAAAFYk/8nGgHQG46Uk/s1600/sprite.png') no-repeat;width:50px;height:50px;display:block;line-height:1;-webkit-transition:background-color 200ms ease;-moz-transition:background-color 200ms ease;-o-transition:background-color 200ms ease;transition:background-color 200ms ease}
+.atas nav a.all{background-position:0 0}
+.atas nav a.all:hover{background-position:0 -50px}
+.atas nav a.previous{background-position:-50px 0}
+.atas nav a.previous:hover{background-position:-50px -50px}
+.atas nav a.next{background-position:-100px 0}
+.atas nav a.next:hover{background-position:-100px -50px}
+.atas nav a.facebook{background-position:-150px 0}
+.atas nav a.facebook:hover{background-position:-150px -50px;background-color:#3b5998}
+.atas nav a.twitter{background-position:-200px 0}
+.atas nav a.twitter:hover{background-position:-200px -50px;background-color:#209fd1}
+.atas nav a:hover,.atas nav a:focus{background-color:#000}
+#blog-pager{}
+#blog-pager a{}
+#blog-pager a:hover{}
+#blog-pager-newer-link {position : fixed;left:10px;z-index : 99999;bottom :45%;}
+#blog-pager-older-link {position : fixed;right :10px;z-index : 99999;bottom :45%;}
