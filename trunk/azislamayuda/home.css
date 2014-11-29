@@ -1,0 +1,67 @@
+body{background:#FFFFFF;color:#333333;font-family: 'Vollkorn', serif; margin:0 auto; padding:0;font-style:normal; font-size:12px;line-height:120%;}
+.subhead{font-family: 'Oswald', sans-serif;color:#000000;padding:0;font-size: 18px;}#header{background:#FFFFFF;font-weight: 300;border-bottom: 4px solid #000;}
+#header a{color:#000000;}
+#header h1 {font-family: 'Oswald', sans-serif;font-size: 20px; margin:10px 20px 0 0;letter-spacing:4px;text-transform:uppercase;font-weight: 700;}
+#header .rss {margin:18px 20px 20px 0;line-height:100%;}#header .rss a{color:#FF8042;-moz-transition: all 0.5s ease-out 0s;}#header .rss a:hover{color:#eeeeee;-moz-transition: all 0.5s ease-out 0s;}
+#kreasi{background:#000000;color:#FFF;font-size:13px;width:100%;padding:15px;text-align:center;position:fixed;bottom:0;}#kreasi a{color:#FFF;}
+#slides img{ margin:0 auto;}
+#slider {max-width:1170px;}
+#slides {margin: 0 auto ;padding:40px 0;}
+#slider #controls {left: 0;margin: -25px auto 0;position: absolute;right: 0;top: 50%;}
+#slider #active {left: 5px;margin: 30px auto;position: absolute;right: 5px;top: 100%;}
+#slider #slides article{width: 25%;}
+#slider #slides .inner{width:400%}
+#slider #slides article .update h4, #slider #slides article .hello h4, #slider #slides article .bio h4, #slider #slides article .kerjo h4 {color:#000;font-family: 'Oswald', sans-serif;font-size: 38px;font-weight: 300;line-height:150%;text-transform:uppercase;}
+#slider #slides article .berita p{font-family: 'Oswald', sans-serif;font-size: 38px;font-weight: 300;text-transform:uppercase;line-height:150%;margin-top: 50px;padding:10px;}
+#slider #slides article .berita{margin:auto;}
+#slider #slides article .update h4 {color:#000000; padding:4px;margin-top: 40px;}
+#slider #slides article .update a:link{color:#000000; padding:4px;}
+#slider #slides article .update h3 {color:#000000; font-family: 'Vollkorn', serif;margin: 20px 0 5px 0;padding: 5px 0 10px 0;font-size: 16px;line-height:100%;text-decoration: underline;}
+#slider #slides article .update h3 span {font-family: 'Vollkorn', serif;font-size: 12px;float:left;margin-right:15px;}
+#slider #slides article .foto img {margin: 20px 0;padding-top: 20px;}
+#slider #slides article .bio h4 {margin: 20px 0;padding-top: 10px;}
+#slider #slides article .bio p:nth-child(3) {text-align:left;}
+#slider #slides article .bio p {margin-top: 10px;font-size: 16px;line-height:1.5em;text-align:right;}
+#slider #slides article .bio a {text-decoration: underline;}
+
+#slider #slides article .kerjo h4 {margin: 40px 0;padding-top: 10px;text-align:center; }
+#slider #slides article .kerjo {text-align:center; }
+
+#slide1:checked ~ #slides .inner { margin-left:-0%; }#slide2:checked ~ #slides .inner { margin-left:-100%; }#slide3:checked ~ #slides .inner { margin-left:-200%; }#slide4:checked ~ #slides .inner { margin-left:-300%; }
+#slide1:checked ~ #active label:nth-child(1){color:#444;}
+#slide2:checked ~ #active label:nth-child(2){color:#444;}
+#slide3:checked ~ #active label:nth-child(3){color:#444;}
+#slide4:checked ~ #active label:nth-child(4){color:#444;}
+#slider input{display:none}
+#slide1:checked ~ #slides .inner{margin-left:0}
+#slide2:checked ~ #slides .inner{margin-left:-100%}
+#slide3:checked ~ #slides .inner{margin-left:-200%}
+#slide4:checked ~ #slides .inner{margin-left:-300%}
+#slide5:checked ~ #slides .inner{margin-left:-400%}
+#slider #overflow{width:100%; overflow:hidden}
+#slider #controls{width:88%; margin:0 auto}
+#slider #slides .inner{width:500%; line-height:0}
+#slider #slides article{width:20%; float:left; text-align:left}
+#slider #active{text-align:left;}
+#slider #active label{display:inline-block; width:25%;margin:0; padding:15px; cursor:pointer;}
+#active{text-align:left}
+#active label{color:#000000;display:inline-block;  margin:15px 60px 0 0; padding: 5px 0; cursor:pointer;float:left;text-transform:uppercase;}
+#active label:hover{color:#eeeeee;}
+#slide1:checked ~ #active label:nth-child(1), 
+#slide2:checked ~ #active label:nth-child(2), 
+#slide3:checked ~ #active label:nth-child(3), 
+#slide4:checked ~ #active label:nth-child(4), 
+#slide5:checked ~ #active label:nth-child(5){color:#444;}
+#slides img{margin:0 auto;}
+#slides .inner{-webkit-transform:translateZ(0); -webkit-transition:all 800ms cubic-bezier(0.770,0.000,0.175,1.000); -moz-transition:all 800ms cubic-bezier(0.770,0.000,0.175,1.000);  -ms-transition:all 800ms cubic-bezier(0.770,0.000,0.175,1.000);  -o-transition:all 800ms cubic-bezier(0.770,0.000,0.175,1.000);  transition:all 800ms cubic-bezier(0.770,0.000,0.175,1.000); /* easeInOutQuart */-webkit-transition-timing-function:cubic-bezier(0.770,0.000,0.175,1.000); -moz-transition-timing-function:cubic-bezier(0.770,0.000,0.175,1.000);  -ms-transition-timing-function:cubic-bezier(0.770,0.000,0.175,1.000);  -o-transition-timing-function:cubic-bezier(0.770,0.000,0.175,1.000);  transition-timing-function:cubic-bezier(0.770,0.000,0.175,1.000); /* easeInOutQuart */}
+#slider{-webkit-transform:translateZ(0); -webkit-transition:all 0.5s ease-out; -moz-transition:all 0.5s ease-out; -o-transition:all 0.5s ease-out; transition:all 0.5s ease-out; margin:0 auto 40px auto; position:relative}
+#controls label{-webkit-transform:translateZ(0); -webkit-transition:opacity 0.2s ease-out; -moz-transition:opacity 0.2s ease-out; -o-transition:opacity 0.2s ease-out; transition:opacity 0.2s ease-out}
+#slides, #active, #active label, .info h3, .desktop, .tablet, .mobile{-webkit-transform:translateZ(0); -webkit-transition:all 0.5s ease-out; -moz-transition:all 0.5s ease-out; -o-transition:all 0.5s ease-out; transition:all 0.5s ease-out}
+#tablet:checked ~ #slider #slides, #mobile:checked ~ #slider #slides{padding:1%; -webkit-border-radius:0px; -moz-border-radius:0px; border-radius:0px}
+#tablet:checked ~ #slider #active{margin:22% 0 0}
+#mobile:checked ~ #slider #active{margin:23% 0 0}
+#mobile:checked ~ #slider #slides .info{opacity:0 !important}
+@media only screen and (max-width:767px) and (min-width:450px){#slider #slides{padding:1%; -webkit-border-radius:0px; -moz-border-radius:0px; border-radius:0px}}
+@media only screen and (max-width:767px){#slider #controls label{margin:0!important}#active label {float:none;}}
+@media only screen and (max-width:450px){#slider #slides{padding:1% 0; -webkit-border-radius:0px; -moz-border-radius:0px; border-radius:0px}
+#slider #slides .info{opacity:0 !important}}
