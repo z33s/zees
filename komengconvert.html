@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Konversi Kode HTML</title>
+<style type="text/css">
+	body {
+		background-color:#2c3e50;
+		padding:20px;
+		font:normal 11px Tahoma,Verdana,Arial,Sans-Serif;
+		color:#999;
+	}
+	a {color:#c94e5c;text-decoration:none}
+	a:hover {color:#ffffff;text-decoration:none}
+
+	p {margin-top:20px;}
+	code {color:#c94e5c;}
+    span {margin-top:10px;float:right}
+	#codes {
+		border:none;
+		width:98%;
+		height:200px;
+		margin:10px auto 10px;
+		display:block;
+		background-color:#42576c;
+		padding:5px;
+		font:normal 12px 'Courier New',Monospace;
+	}
+	
+	#codes:focus {background-color:#384c60;color:white;}
+
+	.button-group {
+		margin:0px auto 0px;
+		text-align:center;
+	}
+	
+	button,button[disabled]:active {
+		background-color:#384c60;
+		font:bold 11px Tahoma,Verdana,Arial,Sans-Serif;
+		color:#999;
+		padding:5px 10px;
+		border:none;
+		-webkit-border-radius:3px;
+		-moz-border-radius:3px;
+		border-radius:3px;
+		cursor:pointer;
+	}
+	
+	button:active {background-color:#21afa4;color:black;}
+	button[disabled],button[disabled]:active {opacity:0.4;cursor:default;}
+
+	#opt1,
+	#opt2,
+	#opt3,
+	#opt4,
+	#opt5 {
+		display:inline-block;
+		margin:0px 10px 0px 0px;
+		vertical-align:middle;
+		border:none;
+		outline:none;
+	}
+</style>
+</head>
+<body>
+<textarea spellcheck="false" id="codes" placeholder="Tulis/paste kode di sini lalu klik 'Konversi'"></textarea>
+<div class="button-group">
+<button id="cvrt" onclick="cdConvert();this.disabled = true;">Konversi</button>
+<button onclick="cdClear();">Bersihkan</button>
+</div>
+<p>
+<input checked="true" id="opt1" type="checkbox" />Konversi <code>&amp;</code> menjadi <code>&amp;amp;</code><br />
+<input id="opt2" type="checkbox" />Konversi <code>&#39;</code> menjadi <code>&amp;#039;</code><br />
+<input id="opt3" type="checkbox" />Konversi <code>&quot;</code> menjadi <code>&amp;quot;</code><br />
+<input checked="true" id="opt4" type="checkbox" />Konversi <code>&lt;</code> menjadi <code>&amp;lt;</code><br />
+<input checked="true" id="opt5" type="checkbox" />Konversi <code>&gt;</code> menjadi <code>&amp;gt;</code>
+</p>
+<script type="text/javascript">
+function cdClear() {
+    var wtarea = document.getElementById('codes');
+    wtarea.value = '';
+    wtarea.focus();
+    document.getElementById('cvrt').disabled = false;
+}
+function cdConvert() {
+    var ctarea = document.getElementById('codes'),
+        cv = ctarea.value,
+        opt1 = document.getElementById('opt1'),
+        opt2 = document.getElementById('opt2'),
+        opt3 = document.getElementById('opt3'),
+        opt4 = document.getElementById('opt4'),
+        opt5 = document.getElementById('opt5');
+    cv = cv.replace(/\t/g, "    ");
+    if (opt1.checked) cv = cv.replace(/&/g, "&amp;");
+    if (opt2.checked) cv = cv.replace(/'/g, "&#039;");
+    if (opt3.checked) cv = cv.replace(/"/g, "&quot;");
+    if (opt4.checked) cv = cv.replace(/</g, "&lt;");
+    if (opt5.checked) cv = cv.replace(/>/g, "&gt;");
+    if (cv.lastIndexOf('\n') != -1 || cv.length > 40) {
+        cv = cv.replace(/^/, "<i rel=\"pre\">");
+    } else {
+        cv = cv.replace(/^/, "<i rel=\"code\">");
+    }
+    cv = cv.replace(/$/, "</i>");
+    ctarea.value = cv;
+    ctarea.focus();
+    ctarea.select();
+};
+</script>
+<span>
+Edit by : <a href="http://www.azislamayuda.com/">Azis Lamayuda</a>
+</span>
+</body>
+</html>
